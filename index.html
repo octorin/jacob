@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sophia Williams - Portfolio</title>
+  <title>Jacob Charles Fine Arts Photography</title>
   <meta name="description"
-    content="Hello there, I'm Sophia Williams – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other.">
+    content="Award-winning architecture, portrait, nature, and events photographer & videographer. Based in New York & available worldwide">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
   <link rel="stylesheet" href="dist/output.css" />
@@ -35,6 +35,7 @@
                   fontFamily: {
                     'nothingyoucoulddo': ['Nothing You Could Do', 'cursive'],
                     'signika': ['Signika', 'sans-serif'],
+                    'helvetica': ['Helvetica', 'sans-serif'],
                   },
                 },
       },
@@ -51,7 +52,7 @@
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="index.html" class="text-2xl font-signika font-bold">SOPHIA WILLIAMS</a>
+          <a href="index.html" class="text-2xl font-helvetica font-bold">Jacob Charles</a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -75,19 +76,37 @@
           class="w-full h-0 transition-all ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center">
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
+         
             <li class="group transition duration-300">
-              <a href="index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
+              <a href="#" class="font-helvetica text-2xl tap-highlight-transparent">PHOTOGRAPHY
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
+                <ul>
+                    <li class="group transition duration-300"><a href="index.html" class="font-helvetica text-xl tap-highlight-transparent">Architecture</a></li>
+                    <li class="group transition duration-300"><a href="index.html" class="font-helvetica text-xl tap-highlight-transparent">Portraits</a></li>
+                    <li class="group transition duration-300"><a href="index.html" class="font-helvetica text-xl tap-highlight-transparent">Event</a></li>
+                </ul>
             </li>
             <li class="group transition duration-300">
-              <a href="dist/about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT ME
+              <a href="dist/video.html" class="font-helvetica text-2xl tap-highlight-transparent">VIDEOGRAPHY
+                <span
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              </a>
+            </li>
+             <li class="group transition duration-300">
+              <a href="dist/sns.html" class="font-helvetica text-2xl tap-highlight-transparent">SOCIAL MEDIA CONTENT
+                <span
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              </a>
+            </li>
+             <li class="group transition duration-300">
+              <a href="https://1-jon-bilous.pixels.com/" class="font-helvetica text-2xl tap-highlight-transparent">PRINT SHOP
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="dist/contact.html" class="font-signika text-2xl tap-highlight-transparent">CONTACT
+              <a href="dist/contact.html" class="font-helvetica text-2xl tap-highlight-transparent">CONTACT
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
@@ -282,7 +301,7 @@
     <div class="max-w-screen-xl py-16 mx-auto">
       <div class="grid grid-cols-1 gap-8 text-center mx-auto">
         <div>
-          <p class="font-signika"><b>SOPHIA WILLIAMS</b></p>
+          <p class="font-helvetica"><b>SOPHIA WILLIAMS</b></p>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
             929 Sycamore Street San Francisco CA<br />(415) 208- 2116
           </p>
