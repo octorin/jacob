@@ -1,4 +1,4 @@
-## To Disable ctrl+c, ctrl+u ##
+// To Disable ctrl+c, ctrl+u
 jQuery(document).ready(function($){
 $(document).keydown(function(event) {
 var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
@@ -11,7 +11,7 @@ return false;
 });
 });
 
-## To disable F12 options ##
+// To disable F12 options ##
 document.onkeypress = function (event) {
 event = (event || window.event);
 if (event.keyCode == 123) {
@@ -30,5 +30,5 @@ if (event.keyCode == 123) {
 return false;
 }
 }
-## To disable right click ##
+// To disable right click ##
 document.addEventListener('contextmenu', event => event.preventDefault());
