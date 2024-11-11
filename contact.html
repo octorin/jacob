@@ -152,40 +152,6 @@
     <p>Please allow up to 1 Business Day for a reply. Thank you very much!</p>
   </div>
 </form>
-
-<script>
-// JavaScript to handle the form submission
-document.getElementById('contactForm').onsubmit = function (e) {
-  e.preventDefault(); // Prevent the default form submission
-
-  // Collect form data
-  const firstName = document.getElementById('fname').value.trim();
-  const lastName = document.getElementById('lname').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  // Fake sending email function (simulate with a delay)
-  setTimeout(function () {
-    // Display success message
-    document.getElementById('formSubmissionText').classList.remove('hidden');
-    document.getElementById('formSubmissionText').style.display = 'block';
-
-    // Optionally, clear the form fields
-    document.getElementById('contactForm').reset();
-  }, 1000);
-
-  // Here you can implement the real email sending code or a service like EmailJS, etc.
-  // For example, you can integrate with an email API like SendGrid or use EmailJS.
-  // This is just a placeholder to simulate email sending.
-};
-</script>
-
-<style>
-.hidden {
-  display: none;
-}
-</style>
         </div>
       </section>
       <div class="col-span-2 md:col-span-1 flex relative">
