@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700;900&display=swap" rel="stylesheet">
   <!-- End - Fonts -->
   <!-- Start - Fancybox Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -53,7 +53,7 @@
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="index.html" class="text-2xl font-bebasneue font-bold">Jacob Charles</a>
+          <a href="index.html" class="text-3xl font-bebasneue font-bold">Jacob Charles</a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -111,21 +111,21 @@
     <div class="grid grid-cols-2 gap-16">
       <section class="col-span-2 md:col-span-1">
         <div class="max-w-screen-md">
-          <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
+          <h1 class="text-3xl pt-10 pb-8 font-bebasneue"><b>let's connect</b></h1>
 
           <form class="space-y-8" action="mailto:jacob.mroczek@gmail.com">
             <div>
-              <label for="name" class="block mb-2 text-sm font-barlow font-medium text-gray-900 dark:text-gray-300">Your
+              <label for="name" class="block mb-2 text-sm font-barlow font-regular text-gray-900 dark:text-gray-300">Your
                 Name</label>
               <input type="text" id="fname"
-                class="w-1/2 p-2.5 mr-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                class="w-1/2 p-2.5 mr-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="First name" required /> 
               <input type="text" id="lname"
-                class="w-1/2 p-2.5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                class="w-1/2 p-2.5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Last name" required /> 
             </div>
             <div>
-              <label for="email" class="block mb-2 text-sm font-barlow font-medium text-gray-900 dark:text-gray-300">Your
+              <label for="email" class="block mb-2 text-sm font-barlow font-regular text-gray-900 dark:text-gray-300">Your
                 email</label>
               <input type="email" id="email"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
@@ -133,20 +133,20 @@
             </div>
             <div>
               <label for="subject"
-                class="block mb-2 text-sm font-barlow font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                class="block mb-2 text-sm font-barlow font-regular text-gray-900 dark:text-gray-300">Subject</label>
               <input type="text" id="subject"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Let me know how I can help you" required />
             </div>
             <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-barlow font-medium text-gray-900 dark:text-gray-400">Your
+              <label for="message" class="block mb-2 text-sm font-barlow font-regular text-gray-900 dark:text-gray-400">Your
                 message</label>
               <textarea id="message" rows="6"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Leave a comment..." required></textarea>
             </div>
             <button type="submit"
-              class="py-3 px-5 text-sm font-barlow font-medium text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+              class="py-3 px-5 text-sm font-barlow font-regular text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               Send message
             </button>
           </form>
@@ -167,8 +167,8 @@
     <div class="max-w-screen-xl py-16 mx-auto">
       <div class="grid grid-cols-1 gap-8 text-center mx-auto">
         <div>
-          <p class="font-barlow"><b>Jacob Charles</b></p>
-          <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+          <p class="font-bebasneue"><b>Jacob Charles</b></p>
+          <p class="font-helvetica mt-4 text-sm text-gray-600 dark:text-gray-300">
             jacob.mroczek [at] gmail.com
           </p>
           <div class="flex mx-auto">
