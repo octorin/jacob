@@ -14,10 +14,6 @@
   /* 1 */
   border-width: 0;
   /* 2 */
-  border-style: solid;
-  /* 2 */
-  border-color: #e5e7eb;
-  /* 2 */
 }
 
 ::before,
@@ -979,8 +975,8 @@ video {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.font-signika {
-  font-family: Signika, sans-serif;
+.font-barlow {
+  font-family: Barlow, sans-serif;
 }
 
 .text-2xl {
