@@ -111,36 +111,35 @@
     <div class="grid grid-cols-2 gap-16">
       <section class="col-span-2 md:col-span-1">
         <div class="max-w-screen-md space-y-8">
-          <h1 class="text-3xl pt-10 pb-8 font-barlow font-light"><b>let's connect</b></h1>
-
-          <form action="sendmail.php" method="POST">
+          <h1 class="text-3xl pt-10 pb-8 font-barlow font-light"><b>let's connect</b></h1>        
+          <form action="sendmail.php" method="post">
            <label for="name" class="block mb-2 text-x1 font-barlow font-bold text-gray-900 dark:text-gray-300">Your Name</label>
            <div class="flex gap-4">
-               <input type="text" id="fname" name="fname"
+               <input type="text" id="" name="fname"
                    class="w-1/2 p-2.5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                    placeholder="First name" required />
-               <input type="text" id="lname" name="lname"
+               <input type="text" id="" name="lname"
                    class="w-1/2 p-2.5 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                    placeholder="Last name" required />
            </div>
             <div>
               <label for="email" class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-300">Your
                 email</label>
-              <input type="email" id="email"
+              <input type="email" id="" name="email"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="example@gmail.com" required />
             </div>
             <div>
               <label for="subject"
                 class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject"
+              <input type="text" id="" name="subject"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="What can I help you with?" required />
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-400">Your
                 message</label>
-              <textarea id="message" rows="6"
+              <textarea id="" name="message" rows="6"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Can you add more details?" required></textarea>
             </div>
