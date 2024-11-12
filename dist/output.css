@@ -572,8 +572,9 @@ video {
   scrollbar-gutter: stable;
   }
   overflow: hidden;
-  left:0px;
-  top:0px;
+  left:0;
+  top:0;
+  right:0;
   width: 100vw;
 }
 
