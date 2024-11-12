@@ -109,7 +109,7 @@
   <!-- Content -->
   <div class="container mx-auto">
           <ul id=""
-            class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
+            class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0 justify-center text-center">
             <li class="group transition duration-300">
               <a href="architecture.html" class="text-3xl pt-10 pb-8 font-barlow font-normal tap-highlight-transparent">architecture
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
@@ -308,13 +308,16 @@
   </div>
   <!-- Footer -->
   <footer>
-    <div class="max-w-screen-xl py-16 mx-auto">
-      <div class="grid grid-cols-1 gap-8 text-center mx-auto">
-        <div>
-          <p class="font-helvetica"><b>Jacob Charles</b></p>
-          <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
-            jacob.mroczek [at] gmail.com
-          </p>
+    <div class="max-w-screen-xl py-16 mx-auto text-center">
+      <div class="grid grid-cols-1 gap-8 mx-auto">
+          <ul class="flex flex-col items-center justify-center duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:mt-0 md:pt-0 md:border-0">
+        <li class="transition duration-300">
+              <a href="contact.html" class="font-bebasneue text-2xl group tap-highlight-transparent"> 
+                got a project? let's chat
+                <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              </a>
+          </li>
+          </ul> 
           <div class="flex mx-auto">
             <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
               <a class="transition duration-300 hover:opacity-75" href="https://www.facebook.com" target="_blank"
@@ -359,11 +362,8 @@
               </a>
             </div>
           </div>
-        </div>
       </div>
-      <p class="mt-8 text-xs text-gray-600 dark:text-gray-300 text-center">
-       <!-- © 2023 Developed and Designed by <a href="https://www.linkedin.com/in/joão-franco-452161195/" class="underline">João Franco</a> -->
-      </p>
+          <p class="font-bebasneue font-2xl text-center"><br>©Jacob Charles Photography</p>
     </div>
   </footer>
   <!-- Script for the LightBox -->
