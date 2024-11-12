@@ -565,6 +565,7 @@ video {
 
 .site-nav {
   position: fixed;
+  max-width: 100%;
   background-color: #fff;
   opacity: 0.95;
   z-index: 50;
@@ -575,7 +576,6 @@ video {
   left:0;
   top:0;
   right:0;
-  width: 100vw;
 }
 
 .bottom-0 {
