@@ -132,7 +132,7 @@
             <div>
               <label for="subject"
                 class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="" name="subject"
+              <input type="text" id="" name="title"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="What can I help you with?" required />
             </div>
@@ -165,13 +165,16 @@
   </div>
   <!-- Footer -->
   <footer>
-    <div class="max-w-screen-xl py-16 mx-auto">
-      <div class="grid grid-cols-1 gap-8 text-center mx-auto">
-        <div>
-          <p class="font-bebasneue font-normal text-base"><b>Jacob Charles</b></p>
-          <p class="font-barlow font-light mt-4 text-sm text-gray-600 dark:text-gray-300">
-            jacob.mroczek [at] gmail.com
-          </p>
+    <div class="max-w-screen-xl py-16 mx-auto text-center">
+      <div class="grid grid-cols-1 gap-8 mx-auto">
+          <ul class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
+        <li class="transition duration-300">
+              <a href="contact.html" class="font-bebasneue text-2xl group tap-highlight-transparent">
+                got a project? let's chat
+                <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              </a>
+          </li>
+          </ul> 
           <div class="flex mx-auto">
             <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
               <a class="transition duration-300 hover:opacity-75" href="https://www.facebook.com" target="_blank"
@@ -216,11 +219,8 @@
               </a>
             </div>
           </div>
-        </div>
       </div>
-      <p class="mt-8 text-xs text-gray-600 dark:text-gray-300 text-center">
-       <!-- © 2023 Developed and Designed by <a href="https://www.linkedin.com/in/joão-franco-452161195/" class="underline">João Franco</a> -->
-      </p>
+          <p class="font-bebasneue font-2xl text-center"><br>©Jacob Charles Photography</p>
     </div>
   </footer>
   <!-- Script for the LightBox -->
@@ -229,6 +229,7 @@
   </script>
   <script src="dist/fade_in.js"></script>
   <script src="dist/menu.js"></script>
+  <script src="dist/nocopy.js"></script>
 </body>
 
 </html>
