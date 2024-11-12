@@ -563,8 +563,14 @@ video {
   position: relative;
 }
 
-.fixed {
+.site-nav {
   position: fixed;
+  background-color: #fff;
+  opacity: 0.95;
+  z-index: 50;
+  html {
+  scrollbar-gutter: stable;
+  }
 }
 
 .bottom-0 {
