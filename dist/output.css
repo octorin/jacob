@@ -565,7 +565,7 @@ video {
 
 .site-header {
   position: fixed;
-  width:100%;
+  max-width: 100%;
   background-color: #fff;
   opacity: 0.95;
   z-index: 50;
