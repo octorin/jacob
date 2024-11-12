@@ -12,11 +12,12 @@ if(empty($_POST) === false) {
 
 	$errors = array();
 
-	if(isset($_POST['name'], $_POST['email'], $_POST['message'])) {
+	if(isset($_POST['fname'], $_POST['email'], $_POST['message'])) {
 			$fields = array(
-				'name'		=> $_POST['name'],
-				'email'		=> $_POST['email'],
-				'message'	=> $_POST['message']
+				'name' => $_POST['fname'] . ' ' . $_POST['lname'],
+				'email'	=> $_POST['email'],
+				'title'	=> $_POST['title'],
+				'message'=> $_POST['message']
 			);
 
 			foreach ($fields as $field => $data) {
@@ -37,12 +38,12 @@ if(empty($_POST) === false) {
 
 
 			if(empty($errors) === true) {
-				$name 		= test_input($_POST['name']);
+				$name 		= test_input($_POST['fname'] . ' ' . $_POST['lname']); 
 				$email 		= test_input($_POST['email']);
 				$message 	= test_input($_POST['message']);
 
-				$to 		= "your-email@gmail.com";
-				$subject 	= "Your Website Name: You have a new message from " . $name;
+				$to 		= "riniy11@gmail.com";
+				$subject 	= "From Your Website: You have a new message from " . $name;
 				
 				$body 		= "
 					<html>
@@ -93,7 +94,7 @@ if(empty($_POST) === false) {
 						</head>
 						<body>
 							<div class='main'>
-								<h4>Hello,<br>I am $name, my quote is below - </h4>
+								<h4>Hello,<br>I am $name, I am reaching out regarding $title - </h4>
 								<table>
 									<tr>
 										<th>Name</th>
