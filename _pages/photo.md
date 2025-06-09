@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /photo
+permalink: /photo/
 title: Photography
 ---
   <!-- Content -->
