@@ -21,7 +21,7 @@
     };
   </script>
 -->
-<!-- Masonry.js instead of Fancybox Init (NEW: more stable with image loading script -->
+<!-- Masonry.js instead of Fancybox Init (NEW: more stable with image loading script
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
@@ -38,7 +38,26 @@
     });
   });
 </script>
+-->
+<!-- 챗지피티가 하라함 -->
+<script>
+  window.addEventListener("load", function () {
+    var grid = document.querySelector('.js-masonry');
+    var sizer = document.querySelector('.masonry-sizer'); // ✅ 반드시 정의해야 함
 
+    if (grid && sizer) {
+      imagesLoaded(grid, function () {
+        if (grid.masonryInstance) grid.masonryInstance.destroy();
+        grid.masonryInstance = new Masonry(grid, {
+          itemSelector: '.masonry-item',
+          columnWidth: sizer,  // ✅ sizer는 변수임!
+          gutter: 16,
+          percentPosition: true
+        });
+      });
+    }
+  });
+</script>
 
   <!-- Local scripts -->
   <script src="{{ site.baseurl }}/dist/fade_in.js"></script>
