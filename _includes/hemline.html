@@ -30,7 +30,6 @@
   if (grid) {
     imagesLoaded(grid, function () {
       // Masonry 초기화 전에 모든 이미지가 로드되었음을 확인
-      const sizer = grid.querySelector('.masonry-sizer');
       if (sizer) {
         new Masonry(grid, {
           itemSelector: '.masonry-item',
