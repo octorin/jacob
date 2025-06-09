@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /video
+permalink: /video/
 title: Videography
 ---
   <!-- Content -->
