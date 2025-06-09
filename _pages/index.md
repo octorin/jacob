@@ -78,7 +78,3 @@ title: Jacob Charles Photography
             </div>
         </div>
       </div>
-    </section>
-  </div>
-
-</html>
