@@ -27,16 +27,19 @@
 <script>
   window.addEventListener("load", function () {
     const grid = document.querySelector('.js-masonry');
-    imagesLoaded(grid, function () {
-    if (grid.masonryInstance) grid.masonryInstance.destroy();
-    grid.masonryInstance = new Masonry(grid, {
-      itemSelector: '.masonry-item',
-      columnWidth: sizer, // DOM 요소 직접 넘기기!
-      gutter: 16,
-      percentPosition: true
+   if (grid) {
+      imagesLoaded(grid, function () {
+        const sizer = grid.querySelector('.masonry-sizer');
+        // Masonry 초기화: 이미지가 로드된 후에만 레이아웃 계산
+        new Masonry(grid, {
+          itemSelector: '.masonry-item',
+          columnWidth: sizer, // DOM 요소 직접 넘기기!
+          gutter: 16,
+          percentPosition: true
+        });
+      });
+    }
   });
-});
-});
 </script>
 
   <!-- Local scripts -->
