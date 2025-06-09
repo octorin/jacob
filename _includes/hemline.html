@@ -27,15 +27,16 @@
 <script>
   window.addEventListener("load", function () {
     const grid = document.querySelector('.js-masonry');
+    const sizer = grid.querySelector('.masonry-sizer');
     imagesLoaded(grid, function () {
       if (grid.masonryInstance) grid.masonryInstance.destroy();
       grid.masonryInstance = new Masonry(grid, {
         itemSelector: '.masonry-item',
-        columnWidth: sizer,
+        columnWidth: sizer, // DOM 요소 직접 넘기기!
         gutter: 16,
         percentPosition: true
       });
-    });
+    })
   });
 </script>
 
