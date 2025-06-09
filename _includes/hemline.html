@@ -29,6 +29,9 @@
       var grid = document.querySelector('.js-masonry');
       if (grid) {
         imagesLoaded(grid, function () {
+          
+          var sizer = document.querySelector('.masonry-sizer'); 
+          
           if (grid.masonryInstance) grid.masonryInstance.destroy();
           grid.masonryInstance = new Masonry(grid, {
             itemSelector: '.masonry-item',
