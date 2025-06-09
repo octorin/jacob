@@ -1,0 +1,14 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+  {% assign images = site.data.photos[include.type] %}
+  {% for image in images %}
+    <div class="overflow-hidden">
+      <a href="{{ image.url }}" data-fancybox="gallery">
+        <img
+          src="{{ image.url }}"
+          alt="{{ image.alt }}"
+          class="object-cover w-full h-full transition-transform duration-500 transform hover:scale-110 opacity-0 animate-fade-in"
+        />
+      </a>
+    </div>
+  {% endfor %}
+</div>
