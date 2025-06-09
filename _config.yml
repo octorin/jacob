@@ -10,13 +10,8 @@ collections:
     output: true
     permalink: /:path/
 
-# Includes & excludes
 include: ['_pages']
-#exclude: [vendor]
 keep_files: [images]
-#exclude: [vendor, node_modules]
-
-# Plug-ins
 plugins:
   - jekyll-email-protect
   - jekyll-seo-tag
