@@ -32,11 +32,11 @@
           if (grid.masonryInstance) grid.masonryInstance.destroy();
           grid.masonryInstance = new Masonry(grid, {
             itemSelector: '.masonry-item',
-            columnWidth: sizer, // 🔥 이것이 핵심 element 객체로 줄것
+            columnWidth: '.masonry-sizer',
             gutter: 16,
             percentPosition: true
           });
-        }, 50); // ⏱️ 강제로 이미지 로딩 완료 후 약간 기다리기
+        });
       }
     });
   </script>
