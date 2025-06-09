@@ -33,6 +33,19 @@ title: Contact
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="What can I help you with?" required />
             </div>
+              <label for="date"
+                class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-300">Event Date</label>
+              <input type="text" id="entry.**number**" name="entry.**number**"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="" required />
+            </div>
+            <div>
+              <label for="venue"
+                class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-300">Venue / Location</label>
+              <input type="text" id="entry.**number**" name="entry.**number**"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="" required />
+            </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-400">Your
                 message</label>
