@@ -27,7 +27,6 @@
 <script>
   window.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector('.js-masonry');
-    const sizer = grid ? grid.querySelector('.masonry-sizer') : null;
     imagesLoaded(grid, function () {
       if (grid.masonryInstance) grid.masonryInstance.destroy();
       grid.masonryInstance = new Masonry(grid, {
