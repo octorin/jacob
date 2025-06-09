@@ -8,23 +8,30 @@ title: Videography
 <div class="container mx-auto px-4 space-y-12 py-10">
 
   <!-- 📽️ Documentary Section -->
-  <div>
     <span class="block font-barlow font-normal text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed mb-4">
       documentary
     </span>
-    <div class="relative w-full pb-[56.25%] h-0 overflow-hidden rounded-lg">
-      <iframe
-        src="https://player.pbs.org/db007b66-532a-4889-8dcf-41ea2cea0688"
-        class="absolute top-0 left-0 w-full h-full"
-        allowfullscreen
-        frameborder="0"
-        title="Documentary video"
-      ></iframe>
-    </div>
-  </div>
+ <!-- PBS가 제공한 기본 코드 -->
+      <div class="pbs-viral-player-wrapper" style="position: relative; padding-top: calc(56.25% + 43px);">
+        <iframe 
+          src="https://player.pbs.org/viralplayer/3077805159/" 
+          allowfullscreen 
+          allow="encrypted-media" 
+          style="position: absolute; top: 0; width: 100%; height: 100%; border: 0;">
+        </iframe>
+      </div>
+
+<!-- Tailwind 기반 반응형 iframe -->
+<div class="relative w-full pb-[calc(56.25%+43px)] h-0 overflow-hidden">
+  <iframe 
+    src="https://player.pbs.org/viralplayer/3077805159/" 
+    allow="encrypted-media" 
+    allowfullscreen
+    class="absolute top-0 left-0 w-full h-full border-0">
+  </iframe>
+</div>
 
   <!-- 🎶 Music Video Section -->
-  <div>
     <span class="block font-barlow font-normal text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed mb-4">
       music video
     </span>
@@ -38,6 +45,5 @@ title: Videography
         title="Music video"
       ></iframe>
     </div>
-  </div>
-
+    
 </div>
