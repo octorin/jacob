@@ -3,8 +3,22 @@ description: Jacob Charles Photography and Videography
 url: "https://rinyoon.com"
 baseurl: "/jacob"
 name: Jacob Charles
+lang: "en"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Includes & excludes
+include: ['_pages']
+#exclude: [vendor]
+keep_files: [images]
+#exclude: [vendor, node_modules]
+
+# Plug-ins
 plugins:
+  - jekyll-email-protect
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-lang: "en"
