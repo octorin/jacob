@@ -27,14 +27,11 @@
   <script>
     window.addEventListener("load", function () {
       var grid = document.querySelector('.js-masonry');
-      var sizer = document.querySelector('.masonry-sizer'); // ✅ 꼭 있어야 해!
-
-      if (grid && sizer) {
+      if (grid) {
         imagesLoaded(grid, function () {
           if (grid.masonryInstance) grid.masonryInstance.destroy();
           grid.masonryInstance = new Masonry(grid, {
             itemSelector: '.masonry-item',
-            columnWidth: sizer,
             gutter: 16,
             percentPosition: true
           });
