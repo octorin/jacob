@@ -1,43 +1,35 @@
-<ul class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6 text-center">
+<ul class="flex flex-col md:flex-row justify-center items-center text-center space-y-2 md:space-y-0 md:space-x-5 mt-5">
+  {% assign current = page.url %}
+  
   <li class="group relative">
-    <a href="{{ site.baseurl }}/photo/architecture" class="text-3xl font-barlow tap-highlight-transparent">
-      architecture
-      <span
-        class="hidden md:block h-0.5 bg-black dark:bg-white transition-all duration-500 absolute left-0 bottom-0
-        {% if page.url == '/photo/architecture/' %}
-          max-w-full
-        {% else %}
-          max-w-0 group-hover:max-w-full
-        {% endif %}">
-      </span>
+    <a href="{{ site.baseurl }}/photo/architecture" class="font-bebasneue text-2xl tap-highlight-transparent">
+      ARCHITECTURE
+      <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white
+        {% if current == '/photo/architecture/' %} max-w-full {% endif %} block"></span>
     </a>
   </li>
-  <li class="text-3xl font-barlow">|</li>
+
+  <li class="font-bebasneue text-2xl">|</li>
+
   <li class="group relative">
-    <a href="{{ site.baseurl }}/photo/portraits" class="text-3xl font-barlow tap-highlight-transparent">
-      portraits
-      <span
-        class="hidden md:block h-0.5 bg-black dark:bg-white transition-all duration-500 absolute left-0 bottom-0
-        {% if page.url == '/photo/portraits/' %}
-          max-w-full
-        {% else %}
-          max-w-0 group-hover:max-w-full
-        {% endif %}">
-      </span>
+    <a href="{{ site.baseurl }}/photo/portraits" class="font-bebasneue text-2xl tap-highlight-transparent">
+      PORTRAITS
+      <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white
+        {% if current == '/photo/portraits/' %} max-w-full {% endif %} block"></span>
     </a>
   </li>
-  <li class="text-3xl font-barlow">|</li>
+
+  <li class="font-bebasneue text-2xl">|</li>
+
   <li class="group relative">
-    <a href="{{ site.baseurl }}/photo/events" class="text-3xl font-barlow tap-highlight-transparent">
-      events
-      <span
-        class="hidden md:block h-0.5 bg-black dark:bg-white transition-all duration-500 absolute left-0 bottom-0
-        {% if page.url == '/photo/events/' %}
-          max-w-full
-        {% else %}
-          max-w-0 group-hover:max-w-full
-        {% endif %}">
-      </span>
+    <a href="{{ site.baseurl }}/photo/events" class="font-bebasneue text-2xl tap-highlight-transparent">
+      EVENTS
+      <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white
+        {% if current == '/photo/events/' %} max-w-full {% endif %} block"></span>
     </a>
   </li>
-</ul>
+
+  <li class="font-bebasneue text-2xl">|</li>
+
+  <li class="group relative">
+    <a href="{{ site.b
