@@ -1,58 +1,68 @@
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <title>{{ site.name }}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
-  <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ '/main.scss' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/main.scss">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
 
   <!-- Syntax Highlighting -->
-  <link rel="stylesheet"  href="{{ '/assets/highlighting/styles/custom.css' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/highlighting/styles/custom.css">
 
-  <!-- Load jQuery -->
+  <!-- jQuery -->
   <script src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
 
-<!-- Alpine.js -->
+  <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <!-- Start - Fonts -->
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap" rel="stylesheet">
-  <!-- End - Fonts -->
-  <!-- Start - Fancybox Scripts -->
+
+  <!-- Fancybox -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <!-- End - Fancybox Scripts -->
+
+  <!-- Tailwind config -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       content: ["./dist/*.{html,js}"],
       theme: {
-        extend:
-                {
-                  fontFamily: {
-                    'bebasneue': ['Bebas Neue', 'sans-serif'],
-                    'barlow': ['Barlow', 'grotesk'],
-                    'helvetica': ['Helvetica', 'sans-serif'],
-                  },
-                },
+        extend: {
+          fontFamily: {
+            'bebasneue': ['Bebas Neue', 'sans-serif'],
+            'barlow': ['Barlow', 'grotesk'],
+            'helvetica': ['Helvetica', 'sans-serif'],
+          },
+        },
       },
       plugins: [],
     }
   </script>
-    <!-- Script for the LightBox -->
+
+  <!-- Fancybox Init -->
   <script>
     Fancybox.bind("[data-fancybox]", {});
   </script>
-  <script src="dist/fade_in.js"></script>
-  <script src="dist/menu.js"></script>
-  <script src="dist/nocopy.js"></script>
-</body>
+
+  <!-- Local scripts -->
+  <script src="{{ site.baseurl }}/dist/fade_in.js"></script>
+  <script src="{{ site.baseurl }}/dist/menu.js"></script>
+  <script src="{{ site.baseurl }}/dist/nocopy.js"></script>
 </head>
+
