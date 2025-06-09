@@ -27,33 +27,16 @@
 <script>
   window.addEventListener("load", function () {
     const grid = document.querySelector('.js-masonry');
-   if (grid) {
-      imagesLoaded(grid, function () {
-        // Masonry 초기화: 이미지가 로드된 후에만 레이아웃 계산
-   new Masonry(grid, {
+   /* const sizer = grid.querySelector('.masonry-sizer'); */
+    imagesLoaded(grid, function () {
+      if (grid.masonryInstance) grid.masonryInstance.destroy();
+      grid.masonryInstance = new Masonry(grid, {
         itemSelector: '.masonry-item',
         columnWidth: sizer, // DOM 요소 직접 넘기기!
         gutter: 16,
         percentPosition: true
       });
-
-      // 강제로 lazy 이미지 로딩 트리거
-      const lazyImages = document.querySelectorAll('.lazy-image');
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.getAttribute('data-src'); // 'data-src'를 'src'로 변경
-            img.removeAttribute('loading');  // 'loading' 속성 제거
-            observer.unobserve(img);  // 이미지가 로딩되면 더 이상 관찰하지 않음
-          }
-        });
-      }, { threshold: 0.1 });
-
-      lazyImages.forEach(img => {
-        observer.observe(img); // 모든 lazy 이미지에 대해 옵저버 추가
-      });
-    });
+    })
   });
 </script>
 
