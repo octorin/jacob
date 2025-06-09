@@ -31,7 +31,7 @@
       if (grid.masonryInstance) grid.masonryInstance.destroy();
       grid.masonryInstance = new Masonry(grid, {
         itemSelector: '.masonry-item',
-        columnWidth: grid.querySelector('.masonry-sizer'), // ✅ 직접 query로 inline
+        columnWidth: sizer
         gutter: 16,
         percentPosition: true
       });
