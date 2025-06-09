@@ -3,28 +3,39 @@ layout: default
 permalink: /photo/
 title: Photography
 ---
-  <!-- Content -->
   <div class="container mx-auto">
-          <ul id=""
-            class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0 justify-center text-center">
-            <li class="group transition duration-300">
-              <a href="architecture.html" class="text-3xl pt-10 pb-8 font-barlow font-normal tap-highlight-transparent">architecture
-                <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
-              </a>
-            </li> <p class="text-3xl pt-10 pb-8 font-barlow font-normal"> | </p>
-            <li class="group transition duration-300">
-              <a href="portraits.html" class="text-3xl pt-10 pb-8 font-barlow font-normal  tap-highlight-transparent">portraits
-                <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
-              </a>
-            </li> <p class="text-3xl pt-10 pb-8 font-barlow font-normal"> | </p>
-             <li class="group transition duration-300">
-              <a href="events.html" class="text-3xl pt-10 pb-8 font-barlow font-normal tap-highlight-transparent">events
-                <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
-              </a>
-            </li>
-          </ul>
+    
+  <!-- Photo menu -->
+<ul
+  class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0 justify-center text-center">
+
+  <li class="group transition duration-300">
+    <a href="{{ site.baseurl }}/photo/arch"
+       class="text-xl sm:text-2xl md:text-3xl pt-10 pb-8 font-barlow font-normal tap-highlight-transparent {% if page.url == '/photo/arch/' %}border-b border-black dark:border-white{% else %}group-hover:border-b group-hover:border-black dark:group-hover:border-white{% endif %}">
+      architecture
+    </a>
+  </li>
+
+  <p class="text-xl sm:text-2xl md:text-3xl pt-10 pb-8 font-barlow font-normal"> | </p>
+
+  <li class="group transition duration-300">
+    <a href="{{ site.baseurl }}/photo/portrait"
+       class="text-xl sm:text-2xl md:text-3xl pt-10 pb-8 font-barlow font-normal tap-highlight-transparent {% if page.url == '/photo/portrait/' %}border-b border-black dark:border-white{% else %}group-hover:border-b group-hover:border-black dark:group-hover:border-white{% endif %}">
+      portraits
+    </a>
+  </li>
+
+  <p class="text-xl sm:text-2xl md:text-3xl pt-10 pb-8 font-barlow font-normal"> | </p>
+
+  <li class="group transition duration-300">
+    <a href="{{ site.baseurl }}/photo/events"
+       class="text-xl sm:text-2xl md:text-3xl pt-10 pb-8 font-barlow font-normal tap-highlight-transparent {% if page.url == '/photo/events/' %}border-b border-black dark:border-white{% else %}group-hover:border-b group-hover:border-black dark:group-hover:border-white{% endif %}">
+      events
+    </a>
+  </li>
+</ul>
+  <!-- Photo menu END -->
+
     
     <section class="text-neutral-700">
       <div class="container w-full">
