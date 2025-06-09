@@ -9,22 +9,16 @@
     Fancybox.bind("[data-fancybox]", {});
   </script>
 
-<!-- imagesLoaded + Masonry -->
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- Masonry.js instead of Fancybox Init -->
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script>
-    window.addEventListener("load", function () {
-      var grid = document.querySelector('.js-masonry');
-      if (grid) {
-        imagesLoaded(grid, function () {
-          new Masonry(grid, {
-            itemSelector: '.masonry-item',
-            gutter: 16,
-            percentPosition: true
-          });
-        });
-      }
-    });
+    window.onload = function () {
+      new Masonry('.js-masonry', {
+        itemSelector: '.masonry-item',
+        gutter: 16,
+        percentPosition: true
+      });
+    };
   </script>
 
   <!-- Local scripts -->
