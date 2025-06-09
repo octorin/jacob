@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /
+title: Jacob Charles Photography
 ---
   <!-- Content -->
   <div class="container mx-auto">
