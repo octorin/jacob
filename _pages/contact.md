@@ -33,6 +33,7 @@ title: Contact
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="What can I help you with?" required />
             </div>
+            <div>
               <label for="date"
                 class="block mb-2 font-barlow font-bold text-gray-900 dark:text-gray-300">Event Date</label>
               <input type="text" id="entry.**number**" name="entry.**number**"
@@ -51,7 +52,7 @@ title: Contact
                 message</label>
               <textarea id="entry.**number**" name="entry.**number**" rows="6"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Can you add more details?" required></textarea>
+                placeholder="Do you want to add more details?" required></textarea>
             </div>
             <button type="submit"
               class="rounded-lg sm:inline-flex w-full cursor-pointer justify-center rounded-md border border-transparent bg-gray-100 px-4 py-2 text-base font-medium text-gray-900 shadow-sm hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:ml-3 sm:w-auto"><b>
