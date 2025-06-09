@@ -1,0 +1,4 @@
+- url: "https://example.com/image1.jpg"
+  alt: "some alt text"
+- url: "https://example.com/image2.jpg"
+  alt: "some alt text"
