@@ -1,11 +1,12 @@
-<div class="flex/inline-block js-masonry" data-masonry='{ "itemSelector": ".masonry-item", "gutter": 16 }'>
-  {% for image in site.data.photos[include.type] %}
-    <div class="masonry-item w-full mb-4">
+<div class="columns-1 sm:columns-2 lg:columns-3 gap-3">
+  {% assign images = site.data.photos[include.type] %}
+  {% for image in images %}
+    <div class="mb-3 break-inside-avoid overflow-hidden">
       <a href="{{ image.url }}" data-fancybox="gallery">
         <img
           src="{{ image.url }}"
           alt="{{ image.alt }}"
-          class="rounded-lg transition duration-300 hover:scale-105"
+          class="w-full object-cover transition-transform duration-500 transform hover:scale-110 opacity-0 animate-fade-in"
         />
       </a>
     </div>
