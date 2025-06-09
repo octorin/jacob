@@ -9,6 +9,18 @@
     Fancybox.bind("[data-fancybox]", {});
   </script>
 
+  <!-- Masonry.js instead of Fancybox Init -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script>
+    window.onload = function () {
+      new Masonry('.js-masonry', {
+        itemSelector: '.masonry-item',
+        gutter: 16,
+        percentPosition: true
+      });
+    };
+  </script>
+
   <!-- Local scripts -->
   <script src="{{ site.baseurl }}/dist/fade_in.js"></script>
   <script src="{{ site.baseurl }}/dist/menu.js"></script>
