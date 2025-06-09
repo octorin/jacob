@@ -25,18 +25,23 @@
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
-  window.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
     const grid = document.querySelector('.js-masonry');
+  if (grid) {
     imagesLoaded(grid, function () {
-      if (grid.masonryInstance) grid.masonryInstance.destroy();
-      grid.masonryInstance = new Masonry(grid, {
-        itemSelector: '.masonry-item',
-        columnWidth: sizer, // DOM 요소 직접 넘기기!
-        gutter: 16,
-        percentPosition: true
-      });
-    })
-  });
+      // Masonry 초기화 전에 모든 이미지가 로드되었음을 확인
+      const sizer = grid.querySelector('.masonry-sizer');
+      if (sizer) {
+        new Masonry(grid, {
+          itemSelector: '.masonry-item',
+          columnWidth: sizer,  // DOM 요소 직접 넘기기!
+          gutter: 16,
+          percentPosition: true
+        });
+      }
+    });
+  }
+});
 </script>
 
   <!-- Local scripts -->
