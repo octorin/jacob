@@ -16,7 +16,7 @@
                 class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
               <span aria-hidden="true"
-                class="block absolute  h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{'opacity-0': open }"></span>
               <span aria-hidden="true"
                 class="block absolute h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
@@ -29,22 +29,43 @@
           class="w-full h-0 transition-all ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center">
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
-         
+
             <li class="group transition duration-300">
-              <a href="{{ site.baseurl }}/photo" class="font-bebasneue text-2xl tap-highlight-transparent">PHOTO
-                <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              <a href="{{ site.baseurl }}/photo/"
+                 class="font-bebasneue text-2xl tap-highlight-transparent relative pb-1
+                   {% if page.url == '/photo/' %}
+                     after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-black dark:after:bg-white
+                   {% else %}
+                     after:absolute after:left-0 after:bottom-0 after:w-0 group-hover:after:w-full after:h-0.5 after:bg-black dark:after:bg-white after:transition-all after:duration-500
+                   {% endif %}">
+                PHOTO
               </a>
             </li>
+
             <li class="group transition duration-300">
-              <a href="{{ site.baseurl }}/video" class="font-bebasneue text-2xl tap-highlight-transparent">VIDEO
-                <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
+              <a href="{{ site.baseurl }}/video/"
+                 class="font-bebasneue text-2xl tap-highlight-transparent relative pb-1
+                   {% if page.url == '/video/' %}
+                     after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-black dark:after:bg-white
+                   {% else %}
+                     after:absolute after:left-0 after:bottom-0 after:w-0 group-hover:after:w-full after:h-0.5 after:bg-black dark:after:bg-white after:transition-all after:duration-500
+                   {% endif %}">
+                VIDEO
               </a>
             </li>
+
             <li class="group transition duration-300">
-              <a href="{{ site.baseurl }}/contact" class="font-bebasneue text-2xl tap-highlight-transparent">CONTACT
-                <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              <a href="{{ site.baseurl }}/contact/"
+                 class="font-bebasneue text-2xl tap-highlight-transparent relative pb-1
+                   {% if page.url == '/contact/' %}
+                     after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-black dark:after:bg-white
+                   {% else %}
+                     after:absolute after:left-0 after:bottom-0 after:w-0 group-hover:after:w-full after:h-0.5 after:bg-black dark:after:bg-white after:transition-all after:duration-500
+                   {% endif %}">
+                CONTACT
               </a>
             </li>
+
           </ul>
         </div>
       </div>
