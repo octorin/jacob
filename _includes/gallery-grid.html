@@ -14,3 +14,19 @@
     {% endfor %}
   </div>
 </div>
+
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const grid = document.querySelector('.js-masonry');
+    imagesLoaded(grid, function() {
+      new Masonry(grid, {
+        itemSelector: '.masonry-item',
+        columnWidth: '.masonry-sizer',
+        gutter: 16,
+        percentPosition: true
+      });
+    });
+  });
+</script>
