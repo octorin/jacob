@@ -5,7 +5,8 @@
 
     {% include header.html %}
 
-      <div class="animate-fade-in transition duration-500"> {{ content }}
+      <div class="animate-fade-in transition duration-500 opacity-0 transition-opacity duration-500 ease-in-out">
+        {{ content }}
       </div>
 
     {% include footer.html %}
