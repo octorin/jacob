@@ -1,7 +1,12 @@
-footer {Add commentMore actions
-  clear: both;
+footer {
   position: relative;
-  /* Additional styling */
+  z-index: 1;
+  margin-top: auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -18,16 +23,37 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 10; 
+  flex-grow: 1;
+  position: relative;
 }
 
 .masonry-item {
-  width: calc(33.333% - 16px);  /* Adjust based on desired column width */
+  width: 100%;
   margin-bottom: 16px;
   box-sizing: border-box;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .masonry-item {
+    width: 50%; /* Two columns on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .masonry-item {
+    width: 33.33%; /* Three columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-item {
+    width: 25%; /* Four columns on large screens */
+  }
 }
 
 /* Placeholder background for lazy-loaded images */
