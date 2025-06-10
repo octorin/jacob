@@ -1,0 +1,57 @@
+footer {Add commentMore actions
+  clear: both;
+  position: relative;
+  /* Additional styling */
+}
+
+body {
+  min-height: 100vh;  /* Ensure full height for the page */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Allow main content to take available space */
+}
+
+.js-masonry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.masonry-item {
+  width: calc(33.333% - 16px);  /* Adjust based on desired column width */
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Placeholder background for lazy-loaded images */
+img[loading="lazy"] {
+  background: url('path/to/placeholder.jpg') no-repeat center center;
+  background-size: cover;
+  height: 200px; /* Minimum height of image */
+}
+
+img[loading="lazy"] {
+  width: 100%; /* Ensure it adapts to the parent container */
+  height: auto;
+}
+
+/* Initially hide images and only show them once loaded */
+img[loading="lazy"] {
+  visibility: hidden;
+}
+
+img[loading="lazy"]:not([src=""]) {
+  visibility: visible;
+}
+
+/* Prevent duplicate loading of the same image */
+img[src] {
+  will-change: transform, opacity; /* Optimization */
+}
