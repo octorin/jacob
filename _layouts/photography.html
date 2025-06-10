@@ -3,17 +3,21 @@
 
   {% include head.html %}
 
+  <body>
+
     {% include header.html %}
 
 
-    {% include photo-subnav.html %} <br>
       <main>
+        {% include photo-subnav.html %} <br>
         {{ content }}
       </main>
+
 
     {% include footer.html %}
 
     {% include hemline.html %}
-      </body>
+
+  </body>
 
 </html>
