@@ -3,15 +3,10 @@
 
   {% include head.html %}
 
-  <body>
     {% include header.html %}
 
-      <main>
         {% include photo-subnav.html %} <br>
-        {{ content }}
-      </main>
-
-  </body>
+      <body class="opacity-0 animate-fade-in transition duration-500">  {{ content }} </body>
 
     {% include footer.html %}
 
