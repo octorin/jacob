@@ -6,8 +6,9 @@
   <title>{{ site.name }}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
-  <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <!-- favicon and CSS -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> 
+  <link rel="stylesheet" href="assets/styles.css">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}">
